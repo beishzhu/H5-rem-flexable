@@ -1,0 +1,70 @@
+/* body {
+min-width: 320px;
+max-width: 750px; */
+
+
+/* flexable 给屏幕划分了10等分 */
+
+
+/* width: 10rem;
+margin: 0 auto;
+font-family: Arial, Helvetica;
+background-color: #f2f2f2;
+} */
+
+
+/*  如果屏幕超过了750 那就按750 设计稿来走 不会让页面超过750px*/
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 75px!important;
+    }
+}
+
+.search_content {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 10rem;
+    background-color: #ffc001;
+    height: 1.173333rem
+}
+
+.calssfily {
+    width: .48rem;
+    height: .8rem;
+    margin: .146667rem .333333rem .133333rem;
+    background: url(../images/search.png) no-repeat;
+    background-size: .48rem .8rem;
+}
+
+.search {
+    flex: 1;
+}
+
+.search input {
+    outline: none;
+    border: 0;
+    height: .88rem;
+    width: 100%;
+    border-radius: .44rem;
+    margin-top: .133333rem;
+    color: #757575;
+    font-size: .333333rem;
+    background-color: #fff2cc;
+    padding-left: .733333rem;
+}
+
+input::-webkit-search-cancel-button {
+    display: none
+}
+
+.login {
+    width: .48rem;
+    height: .8rem;
+    margin: .133333rem;
+    background: url(../images/login.png) no-repeat;
+    background-size: .48rem .8rem;
+}

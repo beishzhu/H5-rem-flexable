@@ -1,0 +1,13 @@
+.mydiv{
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  // less 嵌套的写法
+    a{
+    color: blue;
+      &:hover{
+      color: red;
+      }
+    }
+  &::before{content: '';}
+}
